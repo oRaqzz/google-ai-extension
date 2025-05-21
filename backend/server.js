@@ -5,11 +5,12 @@ const path = require('path')
 const cors = require('cors')
 const bodyParser = require('body-parser')
 const { GoogleGenerativeAI } = require('@google/generative-ai')
-// const { GoogleGenAI } = require('@google/genai')
 
+// server static file
 const staticPath = path.join(__dirname, '..', 'extension', 'public')
 app.use(express.static(staticPath)) 
 
+//middlewares
 app.use(bodyParser.json())
 app.use(cors())
 
@@ -36,8 +37,7 @@ app.post('/home', async (req, res) => {
     console.error('Gemini API Error:', err)
     res.status(500).json({ error: 'Failed to generate response' })
   }
-});
-
+})
 
 // activate the server
 const PORT = process.env.PORT || 4500
