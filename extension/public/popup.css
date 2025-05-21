@@ -1,11 +1,55 @@
-* {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* popup.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    width: 300px;
+    background-color: FAEDCA;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.userPrompt {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#sendBtn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #FE5D26;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 #sendBtn:hover {
-    background-color: rgb(155, 155, 155)
+    background-color: rgba(252, 81, 24, 0.747);
 }
 
-#aiOutput {
-    background-color: black;
+.aiOutput {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    min-height: 50px;
+    font-size: 14px;
+    color: #333;
+    white-space: pre-wrap;
 }
