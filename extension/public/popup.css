@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 20px;
     width: 300px;
-    background-color: FAEDCA;
+    background-color: #FFFBDE;
     box-sizing: border-box;
 }
 
@@ -30,7 +30,7 @@ body {
     width: 100%;
     padding: 10px;
     font-size: 14px;
-    background-color: #FE5D26;
+    background-color: #129990;
     color: white;
     border: none;
     border-radius: 8px;
@@ -39,7 +39,7 @@ body {
 }
 
 #sendBtn:hover {
-    background-color: rgba(252, 81, 24, 0.747);
+    background-color: #10817a;
 }
 
 .aiOutput {
