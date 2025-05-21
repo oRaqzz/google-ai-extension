@@ -4,11 +4,11 @@
   "version": "1.0",
   "description": "A lightweight Gemini chatbot extension.",
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "public/popup.html",
     "default_icon": {
-      "16": "icon16.png",
-      "48": "icon48.png",
-      "128": "icon128.png"
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
     }
   },
   "permissions": [],
@@ -16,9 +16,9 @@
     "http://localhost:4500/"
   ],
   "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   },
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self';"
