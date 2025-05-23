@@ -30,9 +30,12 @@ app.post('/home', async (req, res) => {
 
     const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" })
     const result = await model.generateContent(prompt, {
+      generationConfig: {
+      max_tokens: 200,
       temperature: 0.2,
-      maxTokens: 150
+      },
     })
+
     const text = result.response.text()
 
     res.json({ response: text })
